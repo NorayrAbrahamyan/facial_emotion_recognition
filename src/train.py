@@ -26,8 +26,8 @@ val_transforms = transforms.Compose([
     transforms.Normalize((0.5,), (0.5,)),
 ])
 
-full_dataset_train = FER2013Dataset(csv_file='fer2013.csv', transform=train_transforms)
-full_dataset_val = FER2013Dataset(csv_file='fer2013.csv', transform=val_transforms)
+full_dataset_train = FER2013Dataset(csv_file='data/fer2013.csv', transform=train_transforms)
+full_dataset_val = FER2013Dataset(csv_file='data/fer2013.csv', transform=val_transforms)
 
 total_samples = len(full_dataset_train)
 train_size = int(0.85 * total_samples)

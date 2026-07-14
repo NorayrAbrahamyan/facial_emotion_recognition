@@ -1,8 +1,6 @@
 import numpy as np
 import pandas as pd
-import torch
 from torch.utils.data import Dataset
-from torchvision.transforms import transforms
 
 class FER2013Dataset(Dataset):
   def __init__(self, csv_file, transform=None):
