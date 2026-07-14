@@ -3,8 +3,8 @@ import torch.nn as nn
 import torch.optim as optim
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
-from dataset import FER2013Dataset
-from model import EmotionCNN
+from src.dataset import FER2013Dataset
+from src.model import EmotionCNN
 
 BATCH_SIZE = 64
 LEARNING_RATE = 0.001
